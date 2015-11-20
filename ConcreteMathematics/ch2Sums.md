@@ -17,9 +17,9 @@ a general technique that can reduce virtual any recurrence of the form
 
 **example**
 quicksort comparison steps is  
-<img src="http://www.forkosh.com/mathtex.cgi? C_0=0">  
-<img src="http://www.forkosh.com/mathtex.cgi? C_n=n+1+\frac 2n \sum_{k=0}^{n-1} C_k , for n >0" >
-how to calc <img src="http://www.forkosh.com/mathtex.cgi?C_n">?
+<img src="http://www.forkosh.com/mathtex.cgi?C_0=0">  
+<img src="http://www.forkosh.com/mathtex.cgi?C_n=n+1+\frac2n \sum_{k=0}^{n-1} C_k , for\quad n >0" >
+how to calc C_n
 A:p29
 
 > harmonic number: the kth harmonic produced by a violin string is the fundamental tone produced by a string that is 1/k times as long
@@ -32,5 +32,5 @@ like permutation:for every n should be exactly one k permute
 > calculus 微积分
 
 ## 2.4 multiple sums
-general distributive law:
+general distributive law:  
 <img src="http://www.forkosh.com/mathtex.cgi?\displaystyle\sum_{1<=j,k<=n}a_jb_k=(\displaystyle\sum_{1<=j<=n}a_j)(\displaystyle\sum_{1<=k<=n}a_k)">
