@@ -33,4 +33,27 @@ like permutation:for every n should be exactly one k permute
 
 ## 2.4 multiple sums
 general distributive law:  
+
 <img src="http://www.forkosh.com/mathtex.cgi?\displaystyle\sum_{1<=j,k<=n}a_jb_k=(\displaystyle\sum_{1<=j<=n}a_j)(\displaystyle\sum_{1<=k<=n}a_k)">
+
+## 2.6 finite and infinite calculus
+infinite calculus based on *derivative* operator D
+<img src="http://www.forkosh.com/mathtex.cgi?Df(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}">
+finite calculus based on *difference* operator \Delta
+<img src="http://www.forkosh.com/mathtex.cgi?\Delta f(x)=f(x+1)-f(x)">
+
+
+D      $\to$ d       |  倒数 对  积分
+$\Delta$ $\to$ $\delta$  |  差分 对应 求和
+>> punchline 妙处
+>> recap     概述
+
+**我们从积分和倒数推导出，求和和差分的关系**
+definite sums: If $g(x)=\Delta f(x)$ , then  
+$$
+\sum_a^b g(x) \delta x = f(x)|_a^b =f(b)-f(a)
+$$
+$\sum_a^bg(x)\delta x$ 的含义是：
+$$
+\sum_a^bg(x)\delta x = \sum{a<=k<b} g(k)
+$$
