@@ -37,6 +37,9 @@ general distributive law:
 <img src="http://www.forkosh.com/mathtex.cgi?\displaystyle\sum_{1<=j,k<=n}a_jb_k=(\displaystyle\sum_{1<=j<=n}a_j)(\displaystyle\sum_{1<=k<=n}a_k)">
 
 ## 2.6 finite and infinite calculus
+```
+用积分的思想来算sum 提出了$x^{\underline2}$概念。。
+```
 infinite calculus based on *derivative* operator D
 <img src="http://www.forkosh.com/mathtex.cgi?Df(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}">
 finite calculus based on *difference* operator \Delta
@@ -47,6 +50,7 @@ D      $\to$ d       |  倒数 对  积分
 $\Delta$ $\to$ $\delta$  |  差分 对应 求和
 >> punchline 妙处
 >> recap     概述
+  redeem  赎回
 
 **我们从积分和倒数推导出，求和和差分的关系**
 definite sums: If $g(x)=\Delta f(x)$ , then  
@@ -57,3 +61,16 @@ $\sum_a^bg(x)\delta x$ 的含义是：
 $$
 \sum_a^bg(x)\delta x = \sum{a<=k<b} g(k)
 $$
+
+general law:
+$$
+\sum_{0<=k<n}k^\underline{m} = \left. \frac{k^\underline{m}}{m+1}\right|_0^n = \frac{n^\underline{m+1}}{m+1} , for \ integers\ m,n \geq0
+$$
+
+eg:
+$\displaystyle\sum_{0\leq k <n}k$,$\displaystyle\sum_{0\leq k <n}k^2$
+这些例子都可以通过上述方法求得,P51
+
+**H_x is the discrete analog of the continuous ln_x**
+
+## 2.7 infinite sums
