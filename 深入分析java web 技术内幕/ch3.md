@@ -1,24 +1,24 @@
-Ch3 ÖĞÎÄ±àÂë
+Ch3 ä¸­æ–‡ç¼–ç 
 
-2015Äê11ÔÂ15ÈÕ
+2015å¹´11æœˆ15æ—¥
 15:35
 
-# ¼ÆËã»ú´¢´æ¶¼ÊÇÓÃbyte±íÊ¾¡£8bit
+# è®¡ç®—æœºå‚¨å­˜éƒ½æ˜¯ç”¨byteè¡¨ç¤ºã€‚8bit
 
-	- Ascii 0-31 ¿ØÖÆ×Ö·û£¬32-126´òÓ¡×Ö·û
-	- Utf16 2byte ¶¨³¤±àÂë £¬JavaÒÔutf6×÷ÎªÄÚ´æµÄ×Ö·û´¢´æ¸ñÊ½
-	- Utf8 ±ä³¤±àÂë 1-6×Ö½Ú£¬ºº×Ö3×Ö½Ú
+	- Ascii 0-31 æ§åˆ¶å­—ç¬¦ï¼Œ32-126æ‰“å°å­—ç¬¦
+	- Utf16 2byte å®šé•¿ç¼–ç  ï¼ŒJavaä»¥utf6ä½œä¸ºå†…å­˜çš„å­—ç¬¦å‚¨å­˜æ ¼å¼
+	- Utf8 å˜é•¿ç¼–ç  1-6å­—èŠ‚ï¼Œæ±‰å­—3å­—èŠ‚
 
-# Java IO ÖĞ
-Reader¶Á×Ö·û£¨utf£¬gbk£¬ascii£©£¬InputStream ¶Á×Ö½Úbyte
-Òò´Ë£¬¶ÁioÊÇ´ÓInputStreamµ½reader£¬Ğ´ioÊÇ´ÓWriterµ½OutputStream¡£ÖĞ¼ä¶¼²»ÓÃµ½StreamDecoder or StreamEncoder
+# Java IO ä¸­
+Readerè¯»å­—ç¬¦ï¼ˆutfï¼Œgbkï¼Œasciiï¼‰ï¼ŒInputStream è¯»å­—èŠ‚byte
+å› æ­¤ï¼Œè¯»ioæ˜¯ä»InputStreamåˆ°readerï¼Œå†™ioæ˜¯ä»Writeråˆ°OutputStreamã€‚ä¸­é—´éƒ½ä¸ç”¨åˆ°StreamDecoder or StreamEncoder
 
-# Java ÄÚ´æÖĞ
-String ÒÔutf16±£´æ
-char ÔÚjavaÖĞÊÇ2¸ö×Ö½Ú
+# Java å†…å­˜ä¸­
+String ä»¥utf16ä¿å­˜
+char åœ¨javaä¸­æ˜¯2ä¸ªå­—èŠ‚
 
-Ò²¾ÍÊÇÄãÄÃµ½Ò»´®bytes£¨4920616d20541b5c71¡­£©£¬ÏÈÓÃdecoderÖ¸Ã÷ÕâÊÇÊ²Ã´±àÂë£¬ÔÙÓÃencoder±ä³ÉÆäËû±àÂë
+ä¹Ÿå°±æ˜¯ä½ æ‹¿åˆ°ä¸€ä¸²bytesï¼ˆ4920616d20541b5c71â€¦ï¼‰ï¼Œå…ˆç”¨decoderæŒ‡æ˜è¿™æ˜¯ä»€ä¹ˆç¼–ç ï¼Œå†ç”¨encoderå˜æˆå…¶ä»–ç¼–ç 
 
-# webÖĞ±àÂë
-Êı¾İ¾­¹ıÍøÂç´«ÊäÒÔ×Ö½ÚÎªµ¥Î»
-post£¬url£¬header£¬body¡£¡£¡£fuck
+# webä¸­ç¼–ç 
+æ•°æ®ç»è¿‡ç½‘ç»œä¼ è¾“ä»¥å­—èŠ‚ä¸ºå•ä½
+postï¼Œurlï¼Œheaderï¼Œbodyã€‚ã€‚ã€‚fuck

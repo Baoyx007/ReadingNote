@@ -1,9 +1,9 @@
-Chapte1 webÇëÇó¹ý³Ì
+Chapte1 webè¯·æ±‚è¿‡ç¨‹
 
-2015Äê10ÔÂ15ÈÕ
+2015å¹´10æœˆ15æ—¥
 16:16
 
-serverÈ«¶¼»ùÓÚhttpÐ­Òé
+serverå…¨éƒ½åŸºäºŽhttpåè®®
 
-CDN = ¾µÏñ+»º´æ+ÕûÌå¸ºÔØ¾ùºâ
-»º´æ¾²Ì¬Êý¾Ý
+CDN = é•œåƒ+ç¼“å­˜+æ•´ä½“è´Ÿè½½å‡è¡¡
+ç¼“å­˜é™æ€æ•°æ®
