@@ -1,9 +1,9 @@
 ;---
 ; Excerpted from "Seven Concurrency Models in Seven Weeks",
 ; published by The Pragmatic Bookshelf.
-; Copyrights apply to this code. It may not be used to create training material, 
+; Copyrights apply to this code. It may not be used to create training material,
 ; courses, books, articles, and the like. Contact us if you are in doubt.
-; We make no guarantees that this code is fit for any purpose. 
+; We make no guarantees that this code is fit for any purpose.
 ; Visit http://www.pragmaticprogrammer.com/titles/pb7con for more book information.
 ;---
 (ns server.core
@@ -13,17 +13,23 @@
             [ring.adapter.jetty     :refer [run-jetty]]
             [cheshire.core          :as json]))
 
-(def players (atom ())) 
+(def players (atom ()))
 
 (defn list-players []
-  (response (json/encode @players))) 
+  (response (json/encode @players)))
 
 (defn create-player [player-name]
-  (swap! players conj player-name) 
+  (swap! players conj player-name)
   (status (response "") 201))
 
-(defroutes app-routes 
+(defn delete-player [name]
+  (swap! players (fn [s] (remove #(= % name) s)))
+  (status (response "") 201))
+
+(defroutes app-routes
   (GET "/players" [] (list-players))
-  (PUT "/players/:player-name" [player-name] (create-player player-name)))
+  (PUT "/players/:player-name" [player-name] (create-player player-name))
+  (DELETE "/players/:name" [name] (delete-player name)))
+
 (defn -main [& args]
-  (run-jetty (site app-routes) {:port 3000})) 
+  (run-jetty (site app-routes) {:port 3000}))
