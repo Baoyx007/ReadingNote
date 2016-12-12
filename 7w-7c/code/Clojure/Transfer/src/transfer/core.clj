@@ -13,7 +13,7 @@
 
 (defn transfer [from to amount]
   (dosync
-    (swap! attempts inc) // Side-effect in transaction - DON'T DO THIS
+    (swap! attempts inc)                                    ;Side-effect in transaction - DON'T DO THIS
     (send transfers inc)
     (alter from - amount)
     (alter to + amount)))
