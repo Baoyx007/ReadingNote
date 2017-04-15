@@ -37,3 +37,4 @@
         (not (coll? tree)) (print tree)
         :else (do (fringe (first tree))
                   (fringe (rest tree)))))
+
